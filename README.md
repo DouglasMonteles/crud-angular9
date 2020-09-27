@@ -28,7 +28,7 @@
 ## Execultando
 <ul>
   <li>Na diretório: <strong>backend</strong>
-  ```bash
+  ```
   cd backend
   npm install
   npm start
@@ -36,7 +36,7 @@
   </li>
   
    <li>Na diretório: <strong>web</strong>
-  ```bash
+  ```
   cd web
   npm install
   ng serve
@@ -51,5 +51,9 @@
 <div styles="text-align: center">
   <img styles="margin-botton: 20px" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2001.png">
   <img styles="margin-botton: 20px" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2002.png">
-  <video src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Exibicao%20das%20telas.mp4"></video>
+  
+  <video width="520" height="400" controls>
+    <source src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Exibicao%20das%20telas.mp4" type="video/mp4">
+  </video>
+  
 </div>
