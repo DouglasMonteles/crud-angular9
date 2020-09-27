@@ -15,7 +15,7 @@
   </li>
   
   <li>
-    Baixe o <a href="https://git-scm.com/" target="_blank">git</>
+    Baixe o <a href="https://git-scm.com/" target="_blank">git</a>
   </li>
   
   <li>
@@ -47,3 +47,7 @@
   </li>
 </ul>
 
+## Telas
+<div styles="text-align: center">
+  <img src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2001.png">
+</div>
