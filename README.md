@@ -20,7 +20,7 @@
   
   <li>
     Clone o repositório para o seu computador local:
-    ```console
+    ```bash
     https://github.com/DouglasMonteles/crud-angular9.git
     ```
   </li>
@@ -28,7 +28,7 @@
 ## Execultando
 <ul>
   <li>Na diretório: <strong>backend</strong>
-  ```console
+  ```bash
   cd backend
   npm install
   npm start
@@ -36,7 +36,7 @@
   </li>
   
    <li>Na diretório: <strong>web</strong>
-  ```console
+  ```bash
   cd web
   npm install
   ng serve
@@ -49,5 +49,7 @@
 
 ## Telas
 <div styles="text-align: center">
-  <img src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2001.png">
+  <img styles="margin-botton: 20px" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2001.png">
+  <img styles="margin-botton: 20px" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2002.png">
+  <video src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Exibicao%20das%20telas.mp4"></video>
 </div>
