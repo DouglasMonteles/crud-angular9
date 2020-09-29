@@ -49,11 +49,7 @@
 
 ## Telas
 <div styles="text-align: center">
-  <img styles="margin-botton: 20px" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2001.png">
-  <img styles="margin-botton: 20px" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2002.png">
-  
-  <video width="520" height="400" controls>
-    <source src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Exibicao%20das%20telas.mp4" type="video/mp4">
-  </video>
-  
+  <img styles="margin: 20px auto" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2001.png">
+  <img styles="margin: 20px auto" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Tela%2002.png">
+  <img styles="margin: 20px auto" src="https://github.com/DouglasMonteles/crud-angular9/blob/master/readme/Exibicao%20das%20telas.gif">
 </div>
