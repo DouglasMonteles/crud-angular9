@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { CrudModule } from '../components/product/crud/crud.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    CrudModule,
     Tab2PageRoutingModule
   ],
   declarations: [Tab2Page]
