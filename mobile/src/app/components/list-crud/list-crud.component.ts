@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from 'src/app/models/product';
+import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-crud',
@@ -11,8 +13,16 @@ export class ListCrudComponent implements OnInit {
   @Input() 
   products: Product[];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
+
+  edit(id: number): void {
+    this.router.navigateByUrl(`/edit/${id}`);
+  }
+
+  delete(id: number): void {
+    this.router.navigateByUrl(`/delete/${id}`);
+  }
 
 }
