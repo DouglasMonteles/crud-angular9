@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { ProductPageRoutingModule } from './product-routing.module';
 
 import { ProductPage } from './product.page';
+import { ListCrudModule } from 'src/app/components/list-crud/list-crud.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ListCrudModule,
     ProductPageRoutingModule
   ],
   declarations: [ProductPage]
