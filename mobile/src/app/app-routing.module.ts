@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'product-delete',
     loadChildren: () => import('./pages/product-delete/product-delete.module').then( m => m.ProductDeletePageModule)
   },
+  {
+    path: 'product-create',
+    loadChildren: () => import('./pages/product-create/product-create.module').then( m => m.ProductCreatePageModule)
+  },
 ];
 @NgModule({
   imports: [

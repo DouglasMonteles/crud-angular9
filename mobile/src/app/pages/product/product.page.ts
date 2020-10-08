@@ -35,18 +35,8 @@ export class ProductPage implements OnInit {
     });
   }
 
-  create(product: Product): void {
-    this.productService.create(product).subscribe({
-      next: (data) => {
-        this.productService.showMessage('Sucesso', 'Produto inserido');
-      },
-
-      error: (error) => {
-        this.productService.showMessage('Error', 'Erro ao inserir', true);
-      }
-    });
-
-    this.voltar();
+  create(): void {
+    this.router.navigateByUrl('products/create');
   }
 
   voltar(): void {

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="create(); $event.preventDefault();" class="ion-margin">
+    <ion-item>
+      <ion-label>Name:</ion-label>
+      
+      <ion-input
+        name="name"
+        [(ngModel)]="product.name"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Price:</ion-label>
+      
+      <ion-input
+        name="id"
+        [(ngModel)]="product.price"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" color="secondary">Criar</ion-button>
+  </form>
+</ion-content>
