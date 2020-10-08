@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 import { Router } from '@angular/router';
@@ -17,7 +17,15 @@ export class ProductPage implements OnInit {
     private router: Router,
   ) { }
 
-  async ngOnInit() {
+  ngOnInit() {
+    this.load();
+  }
+
+  ionViewWillEnter() {
+    this.load();
+  }
+
+  async load() {
     await this.productService.findAll().subscribe({
       next: (data) => {
         this.products = data;

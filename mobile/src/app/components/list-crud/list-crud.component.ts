@@ -18,11 +18,11 @@ export class ListCrudComponent implements OnInit {
   ngOnInit() {}
 
   edit(id: number): void {
-    this.router.navigateByUrl(`/edit/${id}`);
+    this.router.navigate([`${this.router.url}/edit/${id}`]);
   }
 
   delete(id: number): void {
-    this.router.navigateByUrl(`/delete/${id}`);
+    this.router.navigate([`${this.router.url}/delete/${id}`]);
   }
 
 }

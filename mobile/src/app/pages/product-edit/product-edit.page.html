@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Alterar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="update(); $event.preventDefault();" class="ion-margin">
+    <ion-item>
+      <ion-label>Id:</ion-label>
+
+      <ion-input
+        name="id"
+        matInput
+        [value]="product.id"
+        disabled
+      ></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Name:</ion-label>
+      
+      <ion-input
+        name="name"
+        [(ngModel)]="product.name"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Price:</ion-label>
+      
+      <ion-input
+        name="id"
+        [(ngModel)]="product.price"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" color="secondary">Alterar</ion-button>
+  </form>
+</ion-content>

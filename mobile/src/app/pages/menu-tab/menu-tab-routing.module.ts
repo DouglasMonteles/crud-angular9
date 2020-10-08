@@ -16,12 +16,17 @@ const routes: Routes = [
       {
         path: 'products',
         loadChildren: () => import('../product/product.module').then(m => m.ProductPageModule),
+      },
+
+      {
+        path: '',
+        redirectTo: 'home',
       }
     ],
   },
 
   {
-    path: '',
+    path: 'home',
     component: MenuTabPage,
     pathMatch: 'full',
   }
