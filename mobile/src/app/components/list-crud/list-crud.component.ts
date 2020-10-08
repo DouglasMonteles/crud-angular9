@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from 'src/app/models/product';
-import { NavController } from '@ionic/angular';
+import { NavController, AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-list-crud',
@@ -13,7 +14,11 @@ export class ListCrudComponent implements OnInit {
   @Input() 
   products: Product[];
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private alertCtrl: AlertController,
+    private productService: ProductService,
+  ) { }
 
   ngOnInit() {}
 
@@ -21,7 +26,7 @@ export class ListCrudComponent implements OnInit {
     this.router.navigate([`${this.router.url}/edit/${id}`]);
   }
 
-  delete(id: number): void {
+  async delete(id: number) {
     this.router.navigate([`${this.router.url}/delete/${id}`]);
   }
 

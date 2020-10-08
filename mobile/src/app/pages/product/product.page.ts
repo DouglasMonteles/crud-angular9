@@ -42,7 +42,7 @@ export class ProductPage implements OnInit {
       },
 
       error: (error) => {
-        this.productService.showMessage('Erro', 'Erro ao inserir', true);
+        this.productService.showMessage('Error', 'Erro ao inserir', true);
       }
     });
 

@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'product-edit',
     loadChildren: () => import('./pages/product-edit/product-edit.module').then( m => m.ProductEditPageModule)
   },
+  {
+    path: 'product-delete',
+    loadChildren: () => import('./pages/product-delete/product-delete.module').then( m => m.ProductDeletePageModule)
+  },
 ];
 @NgModule({
   imports: [

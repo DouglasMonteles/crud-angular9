@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Deletar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="delete(); $event.preventDefault();" class="ion-margin">
+    <ion-item>
+      <ion-label>Id:</ion-label>
+
+      <ion-input
+        name="id"
+        matInput
+        [value]="product.id"
+        disabled
+      ></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Name:</ion-label>
+      
+      <ion-input
+        name="name"
+        [value]="product.name"
+        disabled
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Price:</ion-label>
+      
+      <ion-input
+        name="price"
+        [value]="product.price"
+        disabled
+      ></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" color="danger">Delete</ion-button>
+  </form>
+</ion-content>
